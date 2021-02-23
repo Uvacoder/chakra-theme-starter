@@ -1,0 +1,23 @@
+:root {
+  --font-heading: Domine;
+  --font-paragraph: Roboto;
+  --font-sans-fallback: ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+.font-domine-roboto {
+  --font-heading: Domine, var(--font-sans-fallback);
+  --font-paragraph: Roboto, var(--font-sans-fallback);
+}
+
+.font-hind-open-sans {
+  --font-heading: Hind, var(--font-sans-fallback);
+  --font-paragraph: Open Sans, var(--font-sans-fallback);
+}
+
+.font-lora-merriweather {
+  --font-heading: Lora, var(--font-sans-fallback);
+  --font-paragraph: Merriweather, var(--font-sans-fallback);
+}
