@@ -16,6 +16,14 @@ import { Global } from '@emotion/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 
+const changeTeal: Theme = extendTheme({
+  colors: {
+    teal: {
+      500: '#000fff',
+    },
+  },
+});
+
 const themeOne: Theme = extendTheme({
   colors: {
     primary: {
@@ -146,6 +154,10 @@ const MainApp = () => {
   const contentEditable = true;
   return (
     <ChakraProvider theme={theme}>
+      <Box p="4" background="teal.500"></Box>
+      <ChakraProvider theme={changeTeal}>
+        <Box p="4" background="teal.500"></Box>
+      </ChakraProvider>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
